@@ -24,7 +24,7 @@ class BatchRebootServersOption:
     }
 
     def __init__(self, servers=None, type=None):
-        r"""BatchRebootSeversOption
+        r"""BatchRebootServersOption
 
         The model defined in huaweicloud sdk
 
@@ -43,44 +43,44 @@ class BatchRebootServersOption:
 
     @property
     def servers(self):
-        r"""Gets the servers of this BatchRebootSeversOption.
+        r"""Gets the servers of this BatchRebootServersOption.
 
         云服务器ID列表。
 
-        :return: The servers of this BatchRebootSeversOption.
+        :return: The servers of this BatchRebootServersOption.
         :rtype: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         return self._servers
 
     @servers.setter
     def servers(self, servers):
-        r"""Sets the servers of this BatchRebootSeversOption.
+        r"""Sets the servers of this BatchRebootServersOption.
 
         云服务器ID列表。
 
-        :param servers: The servers of this BatchRebootSeversOption.
+        :param servers: The servers of this BatchRebootServersOption.
         :type servers: list[:class:`huaweicloudsdkecs.v2.ServerId`]
         """
         self._servers = servers
 
     @property
     def type(self):
-        r"""Gets the type of this BatchRebootSeversOption.
+        r"""Gets the type of this BatchRebootServersOption.
 
         重启类型：  - SOFT：普通重启。 - HARD：强制重启。
 
-        :return: The type of this BatchRebootSeversOption.
+        :return: The type of this BatchRebootServersOption.
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        r"""Sets the type of this BatchRebootSeversOption.
+        r"""Sets the type of this BatchRebootServersOption.
 
         重启类型：  - SOFT：普通重启。 - HARD：强制重启。
 
-        :param type: The type of this BatchRebootSeversOption.
+        :param type: The type of this BatchRebootServersOption.
         :type type: str
         """
         self._type = type
@@ -122,7 +122,7 @@ class BatchRebootServersOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchRebootSeversOption):
+        if not isinstance(other, BatchRebootServersOption):
             return False
 
         return self.__dict__ == other.__dict__
